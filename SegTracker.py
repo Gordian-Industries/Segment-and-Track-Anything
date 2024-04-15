@@ -234,6 +234,7 @@ class SegTracker():
             if (bbox[1][0] - bbox[0][0]) * (bbox[1][1] - bbox[0][1]) > annotated_frame.shape[0] * annotated_frame.shape[1] * box_size_threshold:
                 continue
             interactive_mask = self.sam.segment_with_box(origin_frame, bbox, reset_image)[0]
+            print(interactive_mask.shape)
             refined_merged_mask = self.add_mask(interactive_mask)
             self.update_origin_merged_mask(refined_merged_mask)
             self.curr_idx += 1
