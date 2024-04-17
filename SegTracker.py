@@ -2,7 +2,7 @@ import sys
 sys.path.append("..")
 sys.path.append("./sam")
 from sam.segment_anything import sam_model_registry, SamAutomaticMaskGenerator
-from aot_tracker import get_aot
+from SAMTrack.aot_tracker import get_aot
 import numpy as np
 from tool.segmentor import Segmentor
 from tool.detector import Detector
@@ -251,7 +251,7 @@ if __name__ == '__main__':
     
     # ------------------ detect test ----------------------
     
-    origin_frame = cv2.imread('/data2/cym/Seg_Tra_any/Segment-and-Track-Anything/debug/point.png')
+    origin_frame = cv2.imread('/data2/cym/Seg_Tra_any/SAMTrack/debug/point.png')
     origin_frame = cv2.cvtColor(origin_frame, cv2.COLOR_BGR2RGB)
     grounding_caption = "swan.water"
     box_threshold = 0.25

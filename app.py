@@ -1005,7 +1005,7 @@ def seg_track_app():
         #         points_per_side,
         #         origin_frame
         #     ],
-        #     outputs=[
+        #     outputs_oldest=[
         #         Seg_Tracker, input_first_frame, click_stack, grounding_caption
         #     ],
         #     queue=False,
@@ -1021,7 +1021,7 @@ def seg_track_app():
         #         points_per_side,
         #         origin_frame
         #     ],
-        #     outputs=[
+        #     outputs_oldest=[
         #         Seg_Tracker, input_first_frame, click_stack, grounding_caption
         #     ],
         #     queue=False,
@@ -1037,7 +1037,7 @@ def seg_track_app():
         #         points_per_side,
         #         origin_frame,
         #     ],
-        #     outputs=[
+        #     outputs_oldest=[
         #         Seg_Tracker, input_first_frame, click_stack, drawing_board
         #     ],
         #     queue=False,

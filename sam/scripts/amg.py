@@ -16,7 +16,7 @@ from typing import Any, Dict, List
 parser = argparse.ArgumentParser(
     description=(
         "Runs automatic mask generation on an input image or directory of images, "
-        "and outputs masks as either PNGs or COCO-style RLEs. Requires open-cv, "
+        "and outputs_oldest masks as either PNGs or COCO-style RLEs. Requires open-cv, "
         "as well as pycocotools if saving in RLE format."
     )
 )

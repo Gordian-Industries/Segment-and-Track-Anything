@@ -89,7 +89,7 @@ parser.add_argument(
     help=(
         "The model will return five results: (masks, scores, stability_scores, "
         "areas, low_res_logits) instead of the usual three. This can be "
-        "significantly slower for high resolution outputs."
+        "significantly slower for high resolution outputs_oldest."
     ),
 )
 
