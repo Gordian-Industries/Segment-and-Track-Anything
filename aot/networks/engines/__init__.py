@@ -1,5 +1,5 @@
-from networks.engines.aot_engine import AOTEngine, AOTInferEngine
-from networks.engines.deaot_engine import DeAOTEngine, DeAOTInferEngine
+from SAMTrack.aot.networks.engines.aot_engine import AOTEngine, AOTInferEngine
+from SAMTrack.aot.networks.engines.deaot_engine import DeAOTEngine, DeAOTInferEngine
 
 
 def build_engine(name, phase='train', **kwargs):

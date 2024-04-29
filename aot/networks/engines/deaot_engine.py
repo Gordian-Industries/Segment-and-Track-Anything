@@ -1,9 +1,9 @@
 import numpy as np
 
-from utils.image import one_hot_mask
+from SAMTrack.aot.utils.image import one_hot_mask
 
-from networks.layers.basic import seq_to_2d
-from networks.engines.aot_engine import AOTEngine, AOTInferEngine
+from SAMTrack.aot.networks.layers.basic import seq_to_2d
+from SAMTrack.aot.networks.engines.aot_engine import AOTEngine, AOTInferEngine
 
 
 class DeAOTEngine(AOTEngine):

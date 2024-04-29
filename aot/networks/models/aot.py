@@ -1,9 +1,9 @@
 import torch.nn as nn
 
-from networks.encoders import build_encoder
-from networks.layers.transformer import LongShortTermTransformer
-from networks.decoders import build_decoder
-from networks.layers.position import PositionEmbeddingSine
+from SAMTrack.aot.networks.encoders import build_encoder
+from SAMTrack.aot.networks.layers.transformer import LongShortTermTransformer
+from SAMTrack.aot.networks.decoders import build_decoder
+from SAMTrack.aot.networks.layers.position import PositionEmbeddingSine
 
 
 class AOT(nn.Module):
